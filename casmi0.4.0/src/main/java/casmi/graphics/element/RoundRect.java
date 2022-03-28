@@ -45,8 +45,8 @@ public class RoundRect extends Element {
     private double y4;
     private double r = 1.0;
     private double precision = 20.0;
-//change access modifier to final
-    private ShapeMode MODE = ShapeMode.CENTER;
+
+    private final ShapeMode MODE = ShapeMode.CENTER;
 
     private Arc arc[] = new Arc[4];
 
@@ -328,14 +328,10 @@ public class RoundRect extends Element {
         this.precision = precision;
     }
 
-    /**
-     * Align the position of this RoundRect
-     *
-     * @param mode The Alignment of the position.
-     */
-    public final void rectMode(ShapeMode mode) {
+
+    /*public final void rectMode(ShapeMode mode) {
         this.MODE = mode;
-    }
+    }*/
 
     @Override
     public void reset(GL2 gl) {}
