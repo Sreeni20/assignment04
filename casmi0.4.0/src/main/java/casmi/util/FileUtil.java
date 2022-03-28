@@ -228,8 +228,8 @@ public class FileUtil {
             OutputStream out = new FileOutputStream(file);
             try {
                 out.close();
-            } catch (IOException e) {//return exception
-                // Ignore.
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
 
