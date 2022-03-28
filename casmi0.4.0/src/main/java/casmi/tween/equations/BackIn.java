@@ -26,7 +26,7 @@ public class BackIn implements TweenEquation {
 
     @Override
     public final double compute(double t, double b, double c, double d) {
-        float s = 1.70158f; //change the variable to double
+        double s = 1.70158f;
         return c*(t/=d)*t*((s+1)*t - s) + b;
     }
 }
