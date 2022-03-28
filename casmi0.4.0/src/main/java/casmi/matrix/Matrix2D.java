@@ -277,7 +277,7 @@ public class Matrix2D implements Matrix {
         if (out == null || out.length != 2) {
             out = new double[2];
         }
-
+//compare objects using equals()
         if (vec == out) {
             double tx = m00*vec[0] + m01*vec[1] + m02;
             double ty = m10*vec[0] + m11*vec[1] + m12;
