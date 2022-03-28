@@ -381,6 +381,7 @@ abstract public class Element implements Cloneable, Renderable, Resettable {
 	 */
 	public Vector3D getPosition() {
 		Vector3D v = new Vector3D(x, y, z);
+		//return the calculations directly instead of storing it in a variable
 		return v;
 	}
 
