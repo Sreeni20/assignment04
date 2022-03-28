@@ -80,7 +80,7 @@ public class Canvas {
 	public Element get(int index) {
 		return elementList.get(index);
 	}
-
+//synchronize the get method
 	public Camera getCamera(int index) {
 		return this.camera;
 	}
