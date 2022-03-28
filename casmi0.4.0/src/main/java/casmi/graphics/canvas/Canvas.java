@@ -143,7 +143,7 @@ public class Canvas {
 	    {
 	        loadMatrix(g);
 	        g.translate(x, y, z);
-	        renderAllElements(g, false, 0, 0, 0);
+	        renderAllElements(g, false,  0);
 	    }
 	    g.popMatrix();
 	}
@@ -162,7 +162,7 @@ public class Canvas {
 		{
 		    loadMatrix(g);
 		    g.translate(x, y, z);
-		    lastIndex = renderAllElements(g, true, mouseX, mouseY, beginIndex);
+		    lastIndex = renderAllElements(g, true, beginIndex);
 		}
 		g.popMatrix();
 
@@ -186,8 +186,8 @@ public class Canvas {
 			g.popMatrix();
 		}
 	}
-//remove unused parameters
-	private final int renderAllElements(Graphics g, boolean selection, double mouseX, double mouseY, int beginIndex) {
+
+	private final int renderAllElements(Graphics g, boolean selection, int beginIndex) {
 	    int index = beginIndex;
 	    for (Element e : elementList) {
 	        if (selection) {
