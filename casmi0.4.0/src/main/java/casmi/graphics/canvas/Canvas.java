@@ -215,7 +215,7 @@ public class Canvas {
 	public void setMouseStatus(MouseStatus status){
 		this.mouseStatus = status;
 	}
-
+//change the access modifier
 	private final void setupCamera(Graphics g) {
 	    if (this.camera != null) {
 	        this.camera.render(g);
