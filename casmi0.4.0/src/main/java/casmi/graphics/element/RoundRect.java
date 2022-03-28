@@ -45,7 +45,7 @@ public class RoundRect extends Element {
     private double y4;
     private double r = 1.0;
     private double precision = 20.0;
-
+//change access modifier to final
     private ShapeMode MODE = ShapeMode.CENTER;
 
     private Arc arc[] = new Arc[4];
