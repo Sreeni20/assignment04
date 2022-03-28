@@ -228,7 +228,7 @@ public class FileUtil {
             OutputStream out = new FileOutputStream(file);
             try {
                 out.close();
-            } catch (IOException e) {
+            } catch (IOException e) {//return exception
                 // Ignore.
             }
         }
