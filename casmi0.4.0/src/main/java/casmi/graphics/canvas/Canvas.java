@@ -186,7 +186,7 @@ public class Canvas {
 			g.popMatrix();
 		}
 	}
-
+//remove unused parameters
 	private final int renderAllElements(Graphics g, boolean selection, double mouseX, double mouseY, int beginIndex) {
 	    int index = beginIndex;
 	    for (Element e : elementList) {
