@@ -36,7 +36,7 @@ public class Trackball {
 
     private int width, height;
     private Camera camera = null;
-
+//access modifier to static
     class Quaternion {
 
         double x = 0.0, y = 0.0, z = 0.0;
